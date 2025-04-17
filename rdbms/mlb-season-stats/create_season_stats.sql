@@ -1,7 +1,7 @@
-DROP DATABASE IF EXISTS mlb;
+DROP DATABASE IF EXISTS mlb_season_stats;
 
-CREATE DATABASE IF NOT EXISTS mlb;
-USE mlb;
+CREATE DATABASE IF NOT EXISTS mlb_season_stats;
+USE mlb_season_stats;
 
 CREATE TABLE season_stats_team (
     team_id varchar(3) NOT NULL PRIMARY KEY,

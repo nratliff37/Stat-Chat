@@ -1,4 +1,7 @@
-DROP TABLE IF EXISTS player_finance;
+DROP DATABASE IF EXISTS mlb_finance_stats;
+
+CREATE DATABASE IF NOT EXISTS mlb_finance_stats;
+USE mlb_finance_stats;
 
 CREATE TABLE team_finance (
     team_id varchar(3) NOT NULL PRIMARY KEY,
@@ -250,7 +253,7 @@ INSERT INTO player_finance VALUES (289, 'Randy Arozarena', 'TB', 'OF', 8100000, 
 INSERT INTO player_finance VALUES (290, 'Walker Buehler', 'LAD', 'RHP', 8025000, 1, 8025000, 8025000);
 INSERT INTO player_finance VALUES (291, 'Kendall Graveman', 'HOU', 'RHP', 8000000, 3, 24000000, 8000000);
 INSERT INTO player_finance VALUES (292, 'Aledmys Diaz', 'OAK', 'INF', 8000000, 2, 14500000, 7250000);
-INSERT INTO player_finance VALUES (293, 'Travis d'Arnaud', 'ATL', 'C', 8000000, 1, 8000000, 8000000);
+INSERT INTO player_finance VALUES (293, 'Travis d''Arnaud', 'ATL', 'C', 8000000, 1, 8000000, 8000000);
 INSERT INTO player_finance VALUES (294, 'Joe Jimenez', 'ATL', 'RHP', 8000000, 3, 26000000, 8666667);
 INSERT INTO player_finance VALUES (295, 'Joe Kelly', 'LAD', 'RHP', 8000000, 1, 8000000, 8000000);
 INSERT INTO player_finance VALUES (296, 'Logan Webb', 'SF', 'RHP', 8000000, 5, 90000000, 18000000);
@@ -277,7 +280,7 @@ INSERT INTO player_finance VALUES (316, 'James Paxton', 'LAD', 'LHP', 7000000, 1
 INSERT INTO player_finance VALUES (317, 'Omar Narvaez', 'NYM', 'C', 7000000, 2, 15000000, 7500000);
 INSERT INTO player_finance VALUES (318, 'Trevor Williams', 'WSH', 'RHP', 7000000, 2, 13000000, 6500000);
 INSERT INTO player_finance VALUES (319, 'Whit Merrifield', 'PHI', 'INF', 7000000, 1, 7000000, 7000000);
-INSERT INTO player_finance VALUES (320, 'Ke'Bryan Hayes', 'PIT', '3B', 7000000, 8, 70000000, 8750000);
+INSERT INTO player_finance VALUES (320, 'Ke''Bryan Hayes', 'PIT', '3B', 7000000, 8, 70000000, 8750000);
 INSERT INTO player_finance VALUES (321, 'Max Stassi', 'CWS', 'C', 7000000, 3, 17500000, 5833333.33);
 INSERT INTO player_finance VALUES (322, 'Ty France', 'SEA', '1B', 6775000, 1, 6775000, 6775000);
 INSERT INTO player_finance VALUES (323, 'Carlos Estevez', 'LAA', 'RHP', 6750000, 2, 13500000, 6750000);
@@ -301,7 +304,7 @@ INSERT INTO player_finance VALUES (340, 'Yimi Garcia', 'TOR', 'RHP', 6000000, 1,
 INSERT INTO player_finance VALUES (341, 'Yan Gomes', 'CHC', 'C', 6000000, 1, 6000000, 6000000);
 INSERT INTO player_finance VALUES (342, 'Elias Diaz', 'COL', 'C', 6000000, 3, 14500000, 4833333.33);
 INSERT INTO player_finance VALUES (343, 'Clay Holmes', 'NYY', 'RHP', 6000000, 1, 6000000, 6000000);
-INSERT INTO player_finance VALUES (344, 'Tyler O'Neill', 'BOS', 'OF', 5850000, 1, 5850000, 5850000);
+INSERT INTO player_finance VALUES (344, 'Tyler O''Neill', 'BOS', 'OF', 5850000, 1, 5850000, 5850000);
 INSERT INTO player_finance VALUES (345, 'Giovanny Gallegos', 'STL', 'RHP', 5750000, 1, 5750000, 5750000);
 INSERT INTO player_finance VALUES (346, 'Miguel Rojas', 'LAD', 'SS', 5750000, 1, 5750000, 5750000);
 INSERT INTO player_finance VALUES (347, 'Tommy Kahnle', 'NYY', 'RHP', 5750000, 3, 14500000, 4833333);
@@ -383,7 +386,7 @@ INSERT INTO player_finance VALUES (422, 'Mauricio Dubon', 'HOU', '2B', 3500000, 
 INSERT INTO player_finance VALUES (423, 'Colin Rea', 'MIL', 'RHP', 3500000, 1, 3500000, 3500000);
 INSERT INTO player_finance VALUES (424, 'Austin Barnes', 'LAD', 'C', 3500000, 1, 3500000, 3500000);
 INSERT INTO player_finance VALUES (425, 'LaMonte Wade', 'SF', '1B', 3500000, 1, 3500000, 3500000);
-INSERT INTO player_finance VALUES (426, 'Ryan O'Hearn', 'BAL', '1B', 3500000, 1, 3500000, 3500000);
+INSERT INTO player_finance VALUES (426, 'Ryan O''Hearn', 'BAL', '1B', 3500000, 1, 3500000, 3500000);
 INSERT INTO player_finance VALUES (427, 'Garrett Whitlock', 'BOS', 'RHP', 3500000, 4, 18750000, 4687500);
 INSERT INTO player_finance VALUES (428, 'Chris Stratton', 'KC', 'RHP', 3500000, 2, 8000000, 4000000);
 INSERT INTO player_finance VALUES (429, 'Carson Kelly', 'DET', 'C', 3500000, 1, 3500000, 3500000);
@@ -681,7 +684,7 @@ INSERT INTO player_finance VALUES (720, 'Tommy Henry', 'ARI', 'LHP', 760500, 1, 
 INSERT INTO player_finance VALUES (721, 'Cristian Pache', 'PHI', 'OF', 760500, 1, 760500, 760500);
 INSERT INTO player_finance VALUES (722, 'Adley Rutschman', 'BAL', 'C', 760300, 1, 760300, 760300);
 INSERT INTO player_finance VALUES (723, 'Gabriel Moreno', 'ARI', 'C', 760100, 1, 760100, 760100);
-INSERT INTO player_finance VALUES (724, 'Logan O'Hoppe', 'LAA', 'C', 760000, 1, 760000, 760000);
+INSERT INTO player_finance VALUES (724, 'Logan O''Hoppe', 'LAA', 'C', 760000, 1, 760000, 760000);
 INSERT INTO player_finance VALUES (725, 'Jose Soriano', 'LAA', 'RHP', 760000, 1, 760000, 760000);
 INSERT INTO player_finance VALUES (726, 'Jarred Kelenic', 'ATL', 'OF', 760000, 1, 760000, 760000);
 INSERT INTO player_finance VALUES (727, 'Dylan Lee', 'ATL', 'LHP', 760000, 1, 760000, 760000);
@@ -964,7 +967,7 @@ INSERT INTO player_finance VALUES (1003, 'Deivi Garcia', 'CWS', 'RHP', 740550, 1
 INSERT INTO player_finance VALUES (1004, 'Caleb Kilian', 'CHC', 'RHP', 740500, 1, 740500, 740500);
 INSERT INTO player_finance VALUES (1005, 'Luke Little', 'CHC', 'LHP', 740500, 1, 740500, 740500);
 INSERT INTO player_finance VALUES (1006, 'Josh Simpson', 'MIA', 'LHP', 740500, 1, 740500, 740500);
-INSERT INTO player_finance VALUES (1007, 'Riley O'Brien', 'STL', 'RHP', 740450, 1, 740450, 740450);
+INSERT INTO player_finance VALUES (1007, 'Riley O''Brien', 'STL', 'RHP', 740450, 1, 740450, 740450);
 INSERT INTO player_finance VALUES (1008, 'Prelander Berroa', 'CWS', 'RHP', 740350, 1, 740350, 740350);
 INSERT INTO player_finance VALUES (1009, 'Braden Shewmake', 'CWS', 'SS', 740350, 1, 740350, 740350);
 INSERT INTO player_finance VALUES (1010, 'Brayan Rocchio', 'CLE', 'SS', 740200, 1, 740200, 740200);
