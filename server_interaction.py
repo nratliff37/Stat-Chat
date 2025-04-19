@@ -6,11 +6,13 @@ import pymysql
 pymysql.install_as_MySQLdb()
 import pandas as pd
 from pymongo import MongoClient
+from dotenv import load_dotenv
 
 import openai
 import os
 
-openai.api_key = "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"
+load_dotenv()  # Load variables from .env
+openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # INITIALIZE CONNECTIONS
 mlb_season_stats_conn = mysql.connector.connect(
