@@ -7,6 +7,11 @@ pymysql.install_as_MySQLdb()
 import pandas as pd
 from pymongo import MongoClient
 
+import openai
+import os
+
+openai.api_key = "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"
+
 # INITIALIZE CONNECTIONS
 mlb_season_stats_conn = mysql.connector.connect(
     host="localhost",
@@ -32,11 +37,69 @@ mlb_x = mlb_social_media["mlb_x"]
 social_media = mlb_social_media["social_media"]
 social_posts = mlb_social_media["social_posts"]
 
+def get_sql_query_from_gpt(nl_input, db):
+    text_file_path = ''
+    if db == "season-stats":
+        text_file_path = './rdbms/mlb-season-stats/season-stats-specs.txt'
+    elif db == 'finance-stats':
+        text_file_path = './rdbms/mlb-finance-stats/finance-stats-specs.txt'
+
+    training_data = ''
+    with open(text_file_path, 'r') as file:
+        training_data = file.read()
+
+    prompt = f"""
+    You are a helpful assistant that converts natural language into SQL or MongoDB queries.
+
+    This question is about a relational database, so return ONLY a SQL query. Return the query
+    EXACTLY how it would be input in SQL.
+
+    Here are the specs of the database: {training_data}
+
+    User Input: "{nl_input}"
+    Output:
+    """
+    response = openai.ChatCompletion.create(
+        model="gpt-4o-mini",
+        messages=[{"role": "user", "content": prompt}],
+        temperature=0.3
+    )
+    query = response['choices'][0]['message']['content'].strip()
+    query = query[7:-4]
+    return query
+
+def explain_result_with_gpt(query, result):
+    # Convert result to string if it's not already
+    if isinstance(result, list):
+        result_str = "\n".join([str(row) for row in result])
+    else:
+        result_str = str(result)
+
+    prompt = f"""
+    You are a helpful assistant. A user asked a database question and you generated the following query:
+
+    Query:
+    {query}
+
+    The query was run and returned the following results:
+    {result_str}
+
+    Now, explain the results in natural language. Use as few technical terms as possible, and keep it simple.
+    No need to explain the rules of baseball.
+    """
+    response = openai.ChatCompletion.create(
+        model="gpt-4o-mini",
+        messages=[{"role": "user", "content": prompt}],
+        temperature=0.3
+    )
+    return response['choices'][0]['message']['content'].strip()
+
+
 def execute_rdbms_query(db, query):
     try:
         db.execute(query)
-        for row in db.fetchall():
-            print("MySQL Row:", row)
+        result = db.fetchall()
+        return result
     except:
         print("Invalid Query. Try again.")
 
@@ -49,13 +112,20 @@ while val != 'e':
     # TODO Use Web UI input in this spot
     val = input("Input the database you would like to use: Season Stats (s), Finance (f), Social Media (m), Exit (e): ")
     if val == 's':
-        # TODO Obtain query from LLM
-        query = input("Enter your query: ")
-        execute_rdbms_query(mlb_season_stats, query)
+        user_input = input("\nAsk your question: ")
+
+        query = get_sql_query_from_gpt(user_input, "season-stats")
+        result = execute_rdbms_query(mlb_season_stats, query)
+        explanation = explain_result_with_gpt(query, result)
+        print(explanation)
     elif val == 'f':
-        # TODO Obtain query from LLM
-        query = input("Enter your query: ")
-        execute_rdbms_query(mlb_finance_stats, query)
+        user_input = input("\nAsk your question: ")
+
+        query = get_sql_query_from_gpt(user_input, "finance-stats")
+        print(query)
+        result = execute_rdbms_query(mlb_finance_stats, query)
+        explanation = explain_result_with_gpt(query, result)
+        print(explanation)
     elif val == 'm':
         # TODO Obtain query from LLM
         query = input("Enter your query: ")
@@ -65,4 +135,6 @@ while val != 'e':
 
 mlb_season_stats.close()
 mlb_season_stats_conn.close()
+mlb_finance_stats.close()
+mlb_finance_stats_conn.close()
 mongo_client.close()
