@@ -213,8 +213,12 @@ while val != 'e':
 
         query = get_sql_query_from_gpt(user_input, "season-stats")
         result = execute_rdbms_query(mlb_season_stats, query)
-        explanation = explain_result_with_gpt(query, result)
-        print(explanation)
+
+        if result == [] and "SELECT" in query:
+            print("No data found.")
+        else:
+            explanation = explain_result_with_gpt(query, result)
+            print(explanation)
     elif val == 'f':
         user_input = input("\nAsk your question, or go back (b): ")
         if user_input == 'b':
@@ -222,8 +226,12 @@ while val != 'e':
 
         query = get_sql_query_from_gpt(user_input, "finance-stats")
         result = execute_rdbms_query(mlb_finance_stats, query)
-        explanation = explain_result_with_gpt(query, result)
-        print(explanation)
+
+        if result == [] and "SELECT" in query:
+            print("No data found.")
+        else:
+            explanation = explain_result_with_gpt(query, result)
+            print(explanation)
     elif val == 'm':
         user_input = input("\nAsk your question, or go back (b): ")
         if user_input == 'b':
