@@ -1,0 +1,50 @@
+1. Collection: 'social_media'
+    Each document in this collection represents a sports team and contains:
+    - team: string (e.g. "arizona diamondbacks")
+    - instagram: object
+        - handle: string (e.g. "@dbacks")
+        - following: integer
+        - followers: integer
+        - posts: integer
+    - X: object
+        - handle: string (e.g. "dbacks")
+        - following: integer
+        - followers: integer
+    - tiktok: object
+        - handle: string (e.g. "dbacks")
+        - following: integer
+        - followers: integer
+        - likes: integer
+
+2. Collection: 'mlb_instagram'
+    Each document represents a social media post made by a sports team on Instagram:
+    - author: string — the Instagram handle (e.g. "@dbacks")
+    - media: string — always "instagram"
+    - caption: string
+    - date: string — in MM-DD-YY format (e.g. "08-28-24")
+    - likes: integer
+    - link: string — URL to the post
+    - tagged: array of strings — tagged accounts
+    - team name: string — maps to 'social_media.team'
+
+3. Collection: 'mlb_x'
+    Each document represents a post made on X (formerly Twitter):
+    - author: string — X handle (e.g. "dbacks")
+    - media: string — always "x"
+    - caption: string
+    - date: string — MM-DD-YY
+    - likes: integer
+    - link: string — URL to the post
+    - tagged: array of strings
+    - team name: string — maps to 'social_media.team'
+
+4. Collection: 'mlb_tiktok'
+    Each document represents a TikTok post:
+    - author: string — TikTok handle
+    - media: string — always "tiktok"
+    - caption: string
+    - date: string — MM-DD-YY
+    - likes: integer
+    - link: string
+    - tagged: array of strings
+    - team name: string — maps to 'social_media.team'
