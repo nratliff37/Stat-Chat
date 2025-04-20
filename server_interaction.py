@@ -45,7 +45,7 @@ def get_sql_query_from_gpt(nl_input, db):
         training_data = file.read()
 
     system_prompt = f"""
-    You are a helpful assistant that converts natural language into SQL or MongoDB queries.
+    You are a helpful assistant that converts natural language into SQL queries.
 
     This question is about a relational database, so return ONLY a SQL query. Return the query
     EXACTLY how it would be input in SQL.
