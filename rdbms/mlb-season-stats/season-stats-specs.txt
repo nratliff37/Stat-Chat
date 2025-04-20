@@ -14,6 +14,7 @@ CREATE TABLE season_stats_team (
 
 league is always either "American" or "National", and region is always either "East", "Central", or "West"
 A division refers to a combination between league and region (Example: "American" and "East" is called the "AL East")
+If a team name is given, search using a substring.
 
 Below are the possible result values:
 Lost AL Wild Card Series (X-Y), where X-Y is the series score.

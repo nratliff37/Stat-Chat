@@ -1,13 +1,7 @@
 # Imports
 import mysql.connector
-import sys
-import sqlalchemy
-import pymysql
-pymysql.install_as_MySQLdb()
-import pandas as pd
 from pymongo import MongoClient
 from dotenv import load_dotenv
-
 import openai
 import os
 
