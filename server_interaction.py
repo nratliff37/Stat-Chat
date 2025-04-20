@@ -207,21 +207,27 @@ while val != 'e':
     # TODO Use Web UI input in this spot
     val = input("Input the database you would like to use: Season Stats (s), Finance (f), Social Media (m), Exit (e): ")
     if val == 's':
-        user_input = input("\nAsk your question: ")
+        user_input = input("\nAsk your question, or go back (b): ")
+        if user_input == 'b':
+            continue
 
         query = get_sql_query_from_gpt(user_input, "season-stats")
         result = execute_rdbms_query(mlb_season_stats, query)
         explanation = explain_result_with_gpt(query, result)
         print(explanation)
     elif val == 'f':
-        user_input = input("\nAsk your question: ")
+        user_input = input("\nAsk your question, or go back (b): ")
+        if user_input == 'b':
+            continue
 
         query = get_sql_query_from_gpt(user_input, "finance-stats")
         result = execute_rdbms_query(mlb_finance_stats, query)
         explanation = explain_result_with_gpt(query, result)
         print(explanation)
     elif val == 'm':
-        user_input = input("\nAsk your question: ")
+        user_input = input("\nAsk your question, or go back (b): ")
+        if user_input == 'b':
+            continue
 
         query = get_mongodb_query_from_gpt(user_input)
         result = execute_mongodb_query(query)
