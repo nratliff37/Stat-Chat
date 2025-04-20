@@ -113,7 +113,7 @@ INSERT INTO season_stats_batter VALUES (108, "Bryan Reynolds", "PIT", "OF", 30, 
 INSERT INTO season_stats_batter VALUES (109, "Jose Ramirez", "CLE", "3B", 32, 158, 620, 114, 173, 39, 2, 39, 118, 41, 7, 54, 82, 0, 6, 1, .279, .335, .537, .872);
 INSERT INTO season_stats_batter VALUES (110, "Francisco Lindor", "NYM", "SS", 31, 152, 618, 107, 169, 39, 1, 33, 91, 29, 4, 56, 127, 0, 3, 12, .273, .344, .500, .844);
 INSERT INTO season_stats_batter VALUES (111, "Elly De La Cruz", "CIN", "SS", 23, 160, 618, 105, 160, 36, 10, 25, 76, 67, 16, 69, 218, 2, 1, 6, .259, .339, .471, .810);
-INSERT INTO season_stats_batter VALUES (112, "Vladimir Guerrero", "TOR", "1B", 25, 159, 616, 98, 199, 44, 1, 30, 103, 2, 2, 72, 96, 0, 4, 5, .323, .396, .544, .940);
+INSERT INTO season_stats_batter VALUES (112, "Vladimir Guerrero Jr.", "TOR", "1B", 25, 159, 616, 98, 199, 44, 1, 30, 103, 2, 2, 72, 96, 0, 4, 5, .323, .396, .544, .940);
 INSERT INTO season_stats_batter VALUES (113, "Willy Adames", "MIL", "SS", 29, 161, 610, 93, 153, 33, 0, 32, 112, 21, 4, 74, 173, 0, 3, 1, .251, .331, .462, .793);
 INSERT INTO season_stats_batter VALUES (114, "Pete Alonso", "NYM", "1B", 30, 162, 608, 91, 146, 31, 0, 34, 88, 3, 0, 70, 172, 0, 4, 13, .240, .329, .459, .788);
 INSERT INTO season_stats_batter VALUES (115, "Marcell Ozuna", "ATL", "DH", 34, 162, 606, 96, 183, 31, 0, 39, 104, 1, 0, 74, 170, 0, 4, 3, .302, .378, .546, .924);
@@ -264,7 +264,7 @@ INSERT INTO season_stats_batter VALUES (259, "Wilyer Abreu", "BOS", "OF", 25, 13
 INSERT INTO season_stats_batter VALUES (260, "Michael Toglia", "COL", "1B", 26, 116, 399, 62, 87, 14, 3, 25, 55, 10, 1, 54, 147, 0, 3, 1, .218, .311, .456, .767);
 INSERT INTO season_stats_batter VALUES (261, "Ozzie Albies", "ATL", "2B", 28, 99, 399, 52, 100, 29, 1, 10, 53, 8, 1, 27, 65, 0, 4, 5, .251, .303, .404, .707);
 INSERT INTO season_stats_batter VALUES (262, "Josh Bell", "MIA", "1B", 32, 104, 398, 38, 95, 18, 1, 14, 49, 0, 0, 34, 88, 0, 3, 5, .239, .305, .394, .699);
-INSERT INTO season_stats_batter VALUES (263, "Fernando Tatis", "SD", "OF", 26, 102, 398, 64, 110, 21, 1, 21, 49, 11, 3, 32, 96, 0, 1, 7, .276, .340, .492, .832);
+INSERT INTO season_stats_batter VALUES (263, "Fernando Tatis Jr.", "SD", "OF", 26, 102, 398, 64, 110, 21, 1, 21, 49, 11, 3, 32, 96, 0, 1, 7, .276, .340, .492, .832);
 INSERT INTO season_stats_batter VALUES (264, "Nicky Lopez", "CWS", "2B", 29, 124, 398, 40, 96, 12, 3, 1, 21, 5, 7, 37, 67, 6, 0, 4, .241, .312, .294, .606);
 INSERT INTO season_stats_batter VALUES (265, "Davis Schneider", "TOR", "2B", 26, 135, 397, 48, 76, 19, 1, 13, 46, 6, 0, 47, 144, 0, 5, 5, .191, .282, .343, .625);
 INSERT INTO season_stats_batter VALUES (266, "Max Schuemann", "OAK", "SS", 27, 133, 396, 55, 87, 14, 0, 7, 34, 14, 1, 47, 119, 5, 4, 7, .220, .311, .308, .619);
