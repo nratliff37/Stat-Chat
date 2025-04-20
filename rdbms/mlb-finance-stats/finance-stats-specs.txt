@@ -70,3 +70,14 @@ CREATE TABLE player_finance (
     aav float NOT NULL,
     CONSTRAINT player_idfk FOREIGN KEY (team_id) REFERENCES team_finance (team_id)
 );
+
+When a position is referenced, translate the following:
+First baseman -> 1B
+Second baseman -> 2B
+Third baseman -> 3B
+Outfielder -> OF
+Shortshop -> SS
+Catcher -> C
+Left hand pitcher -> LHP
+Right hand pitcher -> RHP
+Designated Hitter -> DH

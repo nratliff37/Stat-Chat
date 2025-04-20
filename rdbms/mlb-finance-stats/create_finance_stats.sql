@@ -49,7 +49,7 @@ INSERT INTO team_finance VALUES ('SD', 'San Diego Padres', 'National', 'West', 9
 INSERT INTO team_finance VALUES ('SF', 'San Francisco Giants', 'National', 'West', 80, 82, 'Missed Playoffs', 'Oracle Park', 'Bob Melvin', 196631925);
 
 CREATE TABLE player_finance (
-    player_id int NOT NULL PRIMARY KEY,
+    player_id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
     player_name varchar(255) NOT NULL,
     team_id varchar(3) NOT NULL,
     position varchar(10) NOT NULL,

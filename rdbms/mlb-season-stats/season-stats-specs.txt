@@ -86,6 +86,15 @@ CREATE TABLE season_stats_batter (
     CONSTRAINT batters_idfk FOREIGN KEY (team_id) REFERENCES season_stats_team (team_id)
 );
 
+When a position is referenced, translate the following:
+First baseman -> 1B
+Second baseman -> 2B
+Third baseman -> 3B
+Outfielder -> OF
+Shortshop -> SS
+Catcher -> C
+Designated Hitter -> DH
+
 CREATE TABLE season_stats_pitcher (
     player_id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
     player_name varchar(255) NOT NULL,
