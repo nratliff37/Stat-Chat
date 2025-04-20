@@ -13,7 +13,41 @@ CREATE TABLE team_finance (
     payroll float NOT NULL
 );
 
+Here are the team id-name pairs:
+BAL: Baltimore Orioles
+BOS: Boston Red Sox
+NYY: New York Yankees
+TB: Tampa Bay Rays
+TOR: Toronto Blue Jays
+CLE: Cleveland Guardians
+CWS: Chicago White Sox
+DET: Detroit Tigers
+KC: Kansas City Royals
+MIN: Minnesota Twins
+HOU: Houston Astros
+LAA: Los Angeles Angels
+OAK: Oakland Athletics
+SEA: Seattle Mariners
+TEX: Texas Rangers
+ATL: Atlanta Braves
+MIA: Miami Marlins
+NYM: New York Mets
+PHI: Philadelphia Phillies
+WSH: Washington Nationals
+CHC: Chicago Cubs
+CIN: Cincinnati Reds
+MIL: Milwaukee Brewers
+PIT: Pittsburgh Pirates
+STL: St. Louis Cardinals
+ARI: Arizona Diamondbacks
+COL: Colorado Rockies
+LAD: Los Angeles Dodgers
+SD: San Diego Padres
+SF: San Francisco Giants
+
 league is always either "American" or "National", and region is always either "East", "Central", or "West"
+A division refers to a combination between league and region (Example: "American" and "East" is called the "AL East")
+If a team name is given, search using a substring.
 
 Below are the possible result values:
 Lost AL Wild Card Series (X-Y), where X-Y is the series score.
