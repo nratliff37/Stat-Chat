@@ -6,13 +6,44 @@ export default function App() {
   const [selectedDb, setSelectedDb] = useState('sql');
   const navigate = useNavigate();
 
-  const handleSearch = () => {
+  const handleSearch = async () => {
     if (query.trim()) {
-      navigate('/results', {
-        state: { query, db: selectedDb },
-      });
+      console.log("Submitting query:", query, "to", selectedDb.toUpperCase());
+  
+      const endpoint =
+        selectedDb === 'sql'
+          ? 'http://localhost:3001/api/generate-sql'
+          : 'http://localhost:3001/api/generate-mongo';
+  
+      try {
+        const response = await fetch(endpoint, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ userQuery: query })
+        });
+  
+        const result = await response.json();
+        console.log("Generated Query:", result.sql || result.mongo);
+        console.log("Query Result:", result.data);
+  
+        navigate('/results', {
+          state: {
+            query,
+            db: selectedDb,
+            generatedSql: result.sql || result.mongo,  // support both SQL and Mongo output
+            results: result.data
+          }
+        });
+      } catch (err) {
+        console.error("Search failed:", err);
+      }
+    } else {
+      console.warn("Query input is empty!");
     }
   };
+  
+
+
 
   return (
     <div
@@ -161,6 +192,7 @@ export default function App() {
               fontSize: '1rem',
               borderRadius: '8px',
               border: '1px solid #ccc',
+              color: 'white',
               fontFamily: "'IBM Plex Sans', sans-serif",
             }}
           />
