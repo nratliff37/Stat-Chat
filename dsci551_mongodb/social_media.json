@@ -1,0 +1,603 @@
+[
+
+       {
+        "team": "arizona diamondbacks",
+        "instagram": {
+           "handle": "@dbacks",
+           "following": 681,
+           "followers": 672000,
+           "posts": 12368
+         },
+         "X": {
+           "handle": "dbacks",
+           "following": 6082,
+           "followers": 651400
+         },
+         "tiktok": {
+           "handle": "dbacks",
+           "following": 13,
+           "followers": 278900,
+           "likes": 3300000
+         }
+       },
+        {
+        "team": "atlanta braves",
+         "instagram": {
+           "handle": "@braves",
+           "following": 509,
+           "followers": 1900000,
+           "posts": 9823
+         },
+         "X": {
+           "handle": "braves",
+           "following": 4987,
+           "followers": 1600000
+         },
+         "tiktok": {
+           "handle": "braves",
+           "following": 88,
+           "followers": 986600,
+           "likes": 14500000
+         }
+       },
+       {
+        "team": "baltimore orioles",
+         "instagram": {
+           "handle": "@orioles",
+           "following": 102,
+           "followers": 755000,
+           "posts": 9137
+         },
+         "X": {
+           "handle": "orioles",
+           "following": 95,
+           "followers": 894100
+         },
+         "tiktok": {
+           "handle": "orioles",
+           "following": 35,
+           "followers": 318300,
+           "likes": 5900000
+         }
+       },
+       {
+        "team": "boston red sox",
+         "instagram": {
+           "handle": "@redsox",
+           "following": 195,
+           "followers": 2300000,
+           "posts": 13345
+         },
+         "X": {
+           "handle": "redsox",
+           "following": 240,
+           "followers": 2200000
+         },
+         "tiktok": {
+           "handle": "redsox",
+           "following": 23,
+           "followers": 841100,
+           "likes": 16400000
+         }
+       },
+       {
+        "team": "chicago white sox",
+         "instagram": {
+           "handle": "@whitesox",
+           "following": 523,
+           "followers": 672000,
+           "posts": 11758
+         },
+         "X": {
+           "handle": "whitesox",
+           "following": 1413,
+           "followers": 1000000
+         },
+         "tiktok": {
+           "handle": "whitesox",
+           "following": 158,
+           "followers": 369700,
+           "likes": 5500000
+         }
+       },
+       {
+        "team": "chicago cubs",
+         "instagram": {
+           "handle": "@cubs",
+           "following": 702,
+           "followers": 1900000,
+           "posts": 9819
+         },
+         "X": {
+           "handle": "cubs",
+           "following": 1089,
+           "followers": 2500000
+         },
+         "tiktok": {
+           "handle": "cubs",
+           "following": 337,
+           "followers": 892300,
+           "likes": 18000000
+         }
+       },
+       {
+        "team": "cincinnati reds",
+         "instagram": {
+           "handle": "@reds",
+           "following": 284,
+           "followers": 772000,
+           "posts": 13277
+         },
+         "X": {
+           "handle": "reds",
+           "following": 441,
+           "followers": 1000000
+         },
+         "tiktok": {
+           "handle": "reds",
+           "following": 39,
+           "followers": 560700,
+           "likes": 9300000
+         }
+       },
+       {
+        "team": "cleveland guardians",
+         "instagram": {
+           "handle": "@cleguardians",
+           "following": 218,
+           "followers": 730000,
+           "posts": 8769
+         },
+         "X": {
+           "handle": "cleguardians",
+           "following": 338,
+           "followers": 1100000
+         },
+         "tiktok": {
+           "handle": "cleguardians",
+           "following": 31,
+           "followers": 69200,
+           "likes": 839000
+         }
+       },
+       {
+        "team": "colorado rockies",
+         "instagram": {
+           "handle": "@rockies",
+           "following": 263,
+           "followers": 555000,
+           "posts": 9850
+         },
+         "X": {
+           "handle": "rockies",
+           "following": 345,
+           "followers": 618100
+         },
+         "tiktok": {
+           "handle": "rockies",
+           "following": 158,
+           "followers": 151900,
+           "likes": 1200000
+         }
+       },
+       {
+        "team": "detroit tigers",
+         "instagram": {
+           "handle": "@tigers",
+           "following": 573,
+           "followers": 1000000,
+           "posts": 8304
+         },
+         "X": {
+           "handle": "tigers",
+           "following": 680,
+           "followers": 1500000
+         },
+         "tiktok": {
+           "handle": "tigers",
+           "following": 138,
+           "followers": 399700,
+           "likes": 4300000
+         }
+       },
+       {
+        "team": "houston astros",
+         "instagram": {
+           "handle": "@astros",
+           "following": 205,
+           "followers": 1600000,
+           "posts": 13748
+         },
+         "X": {
+           "handle": "astros",
+           "following": 303,
+           "followers": 2000000
+         },
+         "tiktok": {
+           "handle": "houstonastros",
+           "following": 45,
+           "followers": 378500,
+           "likes": 5900000
+         }
+       },
+       {
+        "team": "kansas city royals",
+         "instagram": {
+           "handle": "@royals",
+           "following": 159,
+           "followers": 1000000,
+           "posts": 10486
+         },
+         "X": {
+           "handle": "royals",
+           "following": 795,
+           "followers": 1100000
+         },
+         "tiktok": {
+           "handle": "royals",
+           "following": 64,
+           "followers": 335500,
+           "likes": 3600000
+         }
+       },
+       {
+        "team": "los angeles angels",
+         "instagram": {
+           "handle": "@angels",
+           "following": 319,
+           "followers": 1200000,
+           "posts": 11677
+         },
+         "X": {
+           "handle": "angels",
+           "following": 290,
+           "followers": 1300000
+         },
+         "tiktok": {
+           "handle": "angels",
+           "following": 51,
+           "followers": 338500,
+           "likes": 3300000
+         }
+       },
+       {
+        "team": "los angeles dodgers",
+         "instagram": {
+           "handle": "@dodgers",
+           "following": 109,
+           "followers": 4900000,
+           "posts": 17024
+         },
+         "X": {
+           "handle": "dodgers",
+           "following": 399,
+           "followers": 2900000
+         },
+         "tiktok": {
+           "handle": "dodgers",
+           "following": 28,
+           "followers": 2100000,
+           "likes": 44400000
+         }
+       },
+       {
+        "team": "miami marlins",
+         "instagram": {
+           "handle": "@marlins",
+           "following": 293,
+           "followers": 788000,
+           "posts": 12179
+         },
+         "X": {
+           "handle": "marlins",
+           "following": 371,
+           "followers": 421100
+         },
+         "tiktok": {
+           "handle": "marlins",
+           "following": 47,
+           "followers": 257400,
+           "likes": 2700000
+         }
+       },
+       {
+        "team": "milwaukee brewers",
+         "instagram": {
+           "handle": "@brewers",
+           "following": 181,
+           "followers": 674000,
+           "posts": 10526
+         },
+         "X": {
+           "handle": "brewers",
+           "following": 205,
+           "followers": 746700
+         },
+         "tiktok": {
+           "handle": "brewers",
+           "following": 52,
+           "followers": 303100,
+           "likes": 3400000
+         }
+       },
+       {
+        "team": "minnesota twins",
+         "instagram": {
+           "handle": "@twins",
+           "following": 142,
+           "followers": 587000,
+           "posts": 10435
+         },
+         "X": {
+           "handle": "twins",
+           "following": 326,
+           "followers": 708400
+         },
+         "tiktok": {
+           "handle": "mntwins",
+           "following": 46,
+           "followers": 257700,
+           "likes": 3700000
+         }
+       },
+       {
+        "team": "new york mets",
+         "instagram": {
+           "handle": "@mets",
+           "following": 543,
+           "followers": 1700000,
+           "posts": 10743
+         },
+         "X": {
+           "handle": "mets",
+           "following": 2069,
+           "followers": 1200000
+         },
+         "tiktok": {
+           "handle": "mets",
+           "following": 112,
+           "followers": 743200,
+           "likes": 14900000
+         }
+       },
+       {
+        "team": "new york yankees",
+         "instagram": {
+           "handle": "@yankees",
+           "following": 293,
+           "followers": 3900000,
+           "posts": 6646
+         },
+         "X": {
+           "handle": "yankees",
+           "following": 331,
+           "followers": 3380000
+         },
+         "tiktok": {
+           "handle": "yankees",
+           "following": 94,
+           "followers": 1600000,
+           "likes": 39000000
+         }
+       },
+       {
+        "team": "oakland athletics",
+         "instagram": {
+           "handle": "@athletics",
+           "following": 271,
+           "followers": 535000,
+           "posts": 14737
+         },
+         "X": {
+           "handle": "athletics",
+           "following": 496,
+           "followers": 601900
+         },
+         "tiktok": {
+           "handle": "athletics",
+           "following": 38,
+           "followers": 181200,
+           "likes": 983700
+         }
+       },
+       {
+        "team": "philadelphia phillies",
+           "instagram": {
+             "handle": "@phillies",
+             "following": 191,
+             "followers": 1400000,
+             "posts": 11103
+           },
+           "X": {
+             "handle": "phillies",
+             "following": 364,
+             "followers": 2100000
+           },
+           "tiktok": {
+             "handle": "phillies",
+             "following": 60,
+             "followers": 572000,
+             "likes": 8100000
+           }
+       },
+       {
+        "team": "pittsburgh pirates",
+           "instagram": {
+             "handle": "@pittsburghpirates",
+             "following": 399,
+             "followers": 842000,
+             "posts": 10297
+           },
+           "X": {
+             "handle": "pirates",
+             "following": 1467,
+             "followers": 836000
+           },
+           "tiktok": {
+             "handle": "pirates",
+             "following": 100,
+             "followers": 445200,
+             "likes": 5100000
+           }
+       },
+       {
+        "team": "san diego padres",
+           "instagram": {
+             "handle": "@padres",
+             "following": 292,
+             "followers": 1400000,
+             "posts": 14415
+           },
+           "X": {
+             "handle": "padres",
+             "following": 1347,
+             "followers": 708400
+           },
+           "tiktok": {
+             "handle": "padres",
+             "following": 41,
+             "followers": 938100,
+             "likes": 12200000
+           }
+       },
+       {
+        "team": "san francisco giants",
+           "instagram": {
+             "handle": "@sfgiants",
+             "following": 96,
+             "followers": 1600000,
+             "posts": 8314
+           },
+           "X": {
+             "handle": "sfgiants",
+             "following": 256,
+             "followers": 1700000
+           },
+           "tiktok": {
+             "handle": "sfgiants",
+             "following": 27,
+             "followers": 575600,
+             "likes": 14500000
+           }
+       }, 
+       {
+        "team": "seattle mariners",
+           "instagram": {
+             "handle": "@mariners",
+             "following": 266,
+             "followers": 938000,
+             "posts": 12594
+           },
+           "X": {
+             "handle": "mariners",
+             "following": 2482,
+             "followers": 728700
+           },
+           "tiktok": {
+             "handle": "mariners",
+             "following": 72,
+             "followers": 446700,
+             "likes": 13600000
+           }
+       },
+       {
+        "team": "st. louis cardinals",
+           "instagram": {
+             "handle": "@cardinals",
+             "following": 199,
+             "followers": 1100000,
+             "posts": 9559
+           },
+           "X": {
+             "handle": "cardinals",
+             "following": 858,
+             "followers": 1400000
+           },
+           "tiktok": {
+             "handle": "cardinals",
+             "following": 25,
+             "followers": 230300,
+             "likes": 1700000
+           }
+       },
+       {
+        "team": "tampa bay rays",
+           "instagram": {
+             "handle": "@raysbaseball",
+             "following": 266,
+             "followers": 532000,
+             "posts": 10841
+           },
+           "X": {
+             "handle": "raysbaseball",
+             "following": 502,
+             "followers": 689000
+           },
+           "tiktok": {
+             "handle": "rays",
+             "following": 426,
+             "followers": 407600,
+             "likes": 6600000
+           }
+       },
+       {
+        "team": "texas rangers",
+           "instagram": {
+             "handle": "@rangers",
+             "following": 383,
+             "followers": 1000000,
+             "posts": 11845
+           },
+           "X": {
+             "handle": "rangers",
+             "following": 968,
+             "followers": 1500000
+           },
+           "tiktok": {
+             "handle": "rangers",
+             "following": 98,
+             "followers": 480500,
+             "likes": 3000000
+           }
+       }, 
+       {
+        "team": "toronto blue jays",
+           "instagram": {
+             "handle": "@bluejays",
+             "following": 819,
+             "followers": 1700000,
+             "posts": 11962
+           },
+           "X": {
+             "handle": "bluejays",
+             "following": 942,
+             "followers": 2400000
+           },
+           "tiktok": {
+             "handle": "bluejays",
+             "following": 122,
+             "followers": 516200,
+             "likes": 11500000
+           }
+       },
+        {
+        "team": "washington nationals",
+           "instagram": {
+             "handle": "@nationals",
+             "following": 254,
+             "followers": 715000,
+             "posts": 9903
+           },
+           "X": {
+             "handle": "nationals",
+             "following": 652,
+             "followers": 803400
+           },
+           "tiktok": {
+             "handle": "nationals",
+             "following": 8,
+             "followers": 15200,
+             "likes": 39400
+           }
+       }    
+]

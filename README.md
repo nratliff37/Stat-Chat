@@ -1,12 +1,117 @@
-# React + Vite
+# StatChat DB
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+StatChat DB is a full-stack web application that allows users to query Major League Baseball (MLB) data using natural language. It supports both SQL and MongoDB backends and uses OpenAI's GPT-4o model to convert natural language into executable queries.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Prerequisites
 
-## Expanding the ESLint configuration
+Before you begin, make sure you have the following installed:
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Required Software
+
+* Node.js (v18+ recommended) — [https://nodejs.org/](https://nodejs.org/)
+* npm — [https://www.npmjs.com/](https://www.npmjs.com/)
+* MongoDB CLI tools (optional, for importing data) — [https://www.mongodb.com/docs/database-tools/mongoimport/](https://www.mongodb.com/docs/database-tools/mongoimport/)
+* MySQL Workbench (optional, for local MySQL access) — [https://dev.mysql.com/downloads/workbench/](https://dev.mysql.com/downloads/workbench/)
+
+### Required API Keys and Environment Variables
+
+Create a `.env` file inside the `backend/` directory with the following content:
+
+```
+OPENAI_API_KEY=your_openai_api_key_here
+MONGO_URI=your_mongo_connection_string
+MYSQL_HOST=your_mysql_host
+MYSQL_USER=your_mysql_user
+MYSQL_PASSWORD=your_mysql_password
+MYSQL_DB=your_mysql_database_name
+MYSQL_PORT=your_mysql_port
+```
+
+---
+
+## Setup Instructions
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/your-username/stat-chat.git
+cd stat-chat
+```
+
+### 2. Install Dependencies
+
+```bash
+cd backend
+npm install
+cd ../frontend
+npm install
+```
+
+### 3. Set Up Databases
+
+**For MySQL**:
+
+* Create the `railway` database (or your custom name).
+* Run your SQL schema setup script to create `season_stats_batter`, `season_stats_pitcher`, `team_finance`, etc.
+
+**For MongoDB** (hosted on Railway or Atlas):
+
+To import JSON data into each MongoDB collection:
+
+```bash
+mongoimport \
+--uri="your_mongo_connection_string" \
+--collection=social_media \
+--file=path/to/social_media.json \
+--jsonArray
+
+mongoimport \
+--uri="your_mongo_connection_string" \
+--collection=instagram \
+--file=path/to/instagram.json \
+--jsonArray
+
+mongoimport \
+--uri="your_mongo_connection_string" \
+--collection=x \
+--file=path/to/x.json \
+--jsonArray
+
+mongoimport \
+--uri="your_mongo_connection_string" \
+--collection=tiktok \
+--file=path/to/tiktok.json \
+--jsonArray
+```
+
+> Replace `path/to/...` with the actual file paths to your JSON files.
+
+---
+
+### 4. Run the Backend Server
+
+```bash
+cd backend
+npm run dev
+```
+
+This starts the backend at `http://localhost:3001`.
+
+### 5. Run the Frontend Application
+
+```bash
+cd frontend
+npm start
+```
+
+This starts the frontend React app at `http://localhost:3000`.
+
+---
+
+You're now ready to use StatChat! Try entering questions like:
+
+* "Who hit the most home runs?"
+* "Add a new Instagram post by the Yankees with 100000 likes."
+* "Which team has the most followers on TikTok?"
