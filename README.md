@@ -62,25 +62,25 @@ To import JSON data into each MongoDB collection:
 
 ```bash
 mongoimport \
---uri="your_mongo_connection_string" \
+--uri="mongodb://mongo:bXCKXdMtkcirBBCtRgPdZroeaxiQqXht@ballast.proxy.rlwy.net:44503/test?authSource=admin" \
 --collection=social_media \
 --file=path/to/social_media.json \
 --jsonArray
 
 mongoimport \
---uri="your_mongo_connection_string" \
+--uri="mongodb://mongo:bXCKXdMtkcirBBCtRgPdZroeaxiQqXht@ballast.proxy.rlwy.net:44503/test?authSource=admin" \
 --collection=instagram \
 --file=path/to/instagram.json \
 --jsonArray
 
 mongoimport \
---uri="your_mongo_connection_string" \
+--uri="mongodb://mongo:bXCKXdMtkcirBBCtRgPdZroeaxiQqXht@ballast.proxy.rlwy.net:44503/test?authSource=admin" \
 --collection=x \
 --file=path/to/x.json \
 --jsonArray
 
 mongoimport \
---uri="your_mongo_connection_string" \
+--uri="mongodb://mongo:bXCKXdMtkcirBBCtRgPdZroeaxiQqXht@ballast.proxy.rlwy.net:44503/test?authSource=admin" \
 --collection=tiktok \
 --file=path/to/tiktok.json \
 --jsonArray
