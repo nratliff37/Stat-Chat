@@ -45,7 +45,7 @@ cd stat-chat
 ```bash
 cd backend
 npm install
-cd ../frontend
+cd ..
 npm install
 ```
 
@@ -102,7 +102,7 @@ This starts the backend at `http://localhost:3001`.
 ### 5. Run the Frontend Application
 
 ```bash
-cd frontend
+cd ..
 npm start
 ```
 
