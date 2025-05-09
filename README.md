@@ -1,6 +1,6 @@
-# StatChat DB
+# StatChat
 
-StatChat DB is a full-stack web application that allows users to query Major League Baseball (MLB) data using natural language. It supports both SQL and MongoDB backends and uses OpenAI's GPT-4o model to convert natural language into executable queries.
+StatChat is a full-stack web application that allows users to query Major League Baseball (MLB) data using natural language. It supports both SQL and MongoDB backends and uses OpenAI's GPT-4o model to convert natural language into executable queries.
 
 ---
 
