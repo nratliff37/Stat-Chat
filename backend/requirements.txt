@@ -1,0 +1,6 @@
+openai==4.28.1
+pymongo==4.7.2
+mysql-connector-python==8.3.0
+mysql2  # if you're using mysql2 in Node, this line is for reference only; feel free to remove if backend is all Python
+python-dotenv==1.0.1
+nodemon  # Node-only, remove if you're doing Python venv setup
