@@ -54,7 +54,7 @@ npm install
 **For MySQL**:
 
 * Create the `railway` database (or your custom name).
-* Run the SQL schema setup scripts to create `season_stats_batter`, `season_stats_pitcher`, `team_finance`, etc.
+* Run the SQL schema setup scripts (located in the rdbms folders) to create `season_stats_batter`, `season_stats_pitcher`, `team_finance`, etc.
 
 **For MongoDB** (hosted on Railway or Atlas):
 
