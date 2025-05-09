@@ -110,6 +110,18 @@ This starts the frontend React app at `http://localhost:3000`.
 
 ---
 
+### Tip for Python Virtual Environment Setup
+
+When cloning the repo, you can run:
+
+```
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+---
+
 You're now ready to use StatChat! Try entering questions like:
 
 * "Who hit the most home runs?"
