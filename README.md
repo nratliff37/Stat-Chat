@@ -21,12 +21,12 @@ Create a `.env` file inside the `backend/` directory with the following content:
 
 ```
 OPENAI_API_KEY=your_openai_api_key_here
-MONGO_URI=your_mongo_connection_string
-MYSQL_HOST=your_mysql_host
-MYSQL_USER=your_mysql_user
-MYSQL_PASSWORD=your_mysql_password
-MYSQL_DB=your_mysql_database_name
-MYSQL_PORT=your_mysql_port
+MONGO_URI=mongodb://mongo:bXCKXdMtkcirBBCtRgPdZroeaxiQqXht@ballast.proxy.rlwy.net:44503/test?authSource=admin
+MYSQL_HOST=shortline.proxy.rlwy.net
+MYSQL_USER=root
+MYSQL_PASSWORD=TqKksTZLzxLdzjklGqbrwUYuRVNulXnG
+MYSQL_DB=railway
+MYSQL_PORT=56607
 ```
 
 ---
